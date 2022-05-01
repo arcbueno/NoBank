@@ -1,4 +1,7 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:nobank/pages/home/home.page.dart';
 import 'package:nobank/utils/nu_colors.dart';
 import 'package:nobank/utils/strings.dart';
@@ -72,10 +75,13 @@ class _LoginPageState extends State<LoginPage> {
                           SizedBox(
                             width: 16,
                           ),
-                          Icon(
-                            Icons.call_made,
-                            size: 16,
-                            color: NuColors.nuPurple,
+                          Transform.rotate(
+                            angle: pi / 4,
+                            child: FaIcon(
+                              FontAwesomeIcons.arrowUp,
+                              size: 14,
+                              color: NuColors.nuPurple,
+                            ),
                           ),
                         ],
                       ),
