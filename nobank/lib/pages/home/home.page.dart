@@ -435,6 +435,221 @@ class _HomePageState extends State<HomePage> {
                 ),
                 categoryDivider(),
                 // Investimentos
+                Container(
+                  margin: EdgeInsets.all(24),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      FaIcon(
+                        FontAwesomeIcons.signal,
+                        color: Colors.black.withOpacity(.8),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Investimentos',
+                            style: Theme.of(context)
+                                .textTheme
+                                .headline5!
+                                .copyWith(fontWeight: FontWeight.w600),
+                          ),
+                          Icon(
+                            Icons.chevron_right,
+                            color: Colors.black.withOpacity(.6),
+                          ),
+                        ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          top: 16,
+                          bottom: 8,
+                        ),
+                        child: Text(
+                          'O jeito Nu de investir: sem asteriscos, linguagem fácil e a partir de R\$1. Saiba mais.',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.black.withOpacity(.5),
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                categoryDivider(),
+                // Seguros
+                Container(
+                  margin: EdgeInsets.all(24),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      FaIcon(
+                        FontAwesomeIcons.umbrella,
+                        color: Colors.black.withOpacity(.8),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Text(
+                        'Seguros',
+                        style: Theme.of(context)
+                            .textTheme
+                            .headline5!
+                            .copyWith(fontWeight: FontWeight.w600),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          top: 24,
+                          bottom: 24,
+                        ),
+                        child: Text(
+                          'Proteção para você cuidar do que importa',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.black.withOpacity(.5),
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(15),
+                          ),
+                          color: Colors.grey.withOpacity(.15),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            children: [
+                              FaIcon(
+                                FontAwesomeIcons.heart,
+                              ),
+                              SizedBox(
+                                width: 16,
+                              ),
+                              Text(
+                                'Seguro vida',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              Spacer(),
+                              Text(
+                                'Conhecer',
+                                style: TextStyle(
+                                  color: NuColors.nuPurple,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(15),
+                          ),
+                          color: Colors.grey.withOpacity(.15),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Row(
+                            children: [
+                              FaIcon(
+                                FontAwesomeIcons.mobile,
+                              ),
+                              SizedBox(
+                                width: 16,
+                              ),
+                              Text(
+                                'Seguro celular',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              Spacer(),
+                              Text(
+                                'Conhecer',
+                                style: TextStyle(
+                                  color: NuColors.nuPurple,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                categoryDivider(),
+                // Shopping
+                Container(
+                  margin: EdgeInsets.all(24),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      FaIcon(
+                        FontAwesomeIcons.bagShopping,
+                        color: Colors.black.withOpacity(.8),
+                      ),
+                      SizedBox(
+                        height: 16,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Text(
+                            'Shopping',
+                            style: Theme.of(context)
+                                .textTheme
+                                .headline5!
+                                .copyWith(fontWeight: FontWeight.w600),
+                          ),
+                          Icon(
+                            Icons.chevron_right,
+                            color: Colors.black.withOpacity(.6),
+                          ),
+                        ],
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(
+                          top: 16,
+                          bottom: 8,
+                        ),
+                        child: Text(
+                          'Vantagens exclusivas das nossas marcas preferidas',
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: Colors.black.withOpacity(.5),
+                            fontWeight: FontWeight.w600,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+                categoryDivider(),
+                // Descubra mais
+                Container(
+                  margin: EdgeInsets.only(left: 24, top: 16),
+                  child: Text(
+                    'Descubra mais',
+                    style: Theme.of(context)
+                        .textTheme
+                        .headline5!
+                        .copyWith(fontWeight: FontWeight.w600),
+                  ),
+                ),
               ],
             ),
           ),
@@ -546,7 +761,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
         ),
-      )
+      ),
     ];
   }
 
