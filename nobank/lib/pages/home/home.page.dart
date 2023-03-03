@@ -351,7 +351,14 @@ class _HomePageState extends State<HomePage> {
                               elevation: 0,
                               primary: Colors.red,
                             ),
-                            onPressed: () => print('a'),
+                            onPressed: () {
+                              var snackBar = SnackBar(
+                                content: Text('Feature in progress'),
+                              );
+
+                              ScaffoldMessenger.of(context)
+                                  .showSnackBar(snackBar);
+                            },
                             child: Text(
                               'Pagar fatura',
                               style: TextStyle(fontSize: 16),
