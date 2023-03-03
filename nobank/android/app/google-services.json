@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "69742715451",
+    "project_id": "nobank-bitrise",
+    "storage_bucket": "nobank-bitrise.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:69742715451:android:23acc4e07180b14225321e",
+        "android_client_info": {
+          "package_name": "com.example.nobank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "69742715451-9ns7bg38dghr7gm7678c5a6ttmft3qe5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-RZgKFASYJQ9t3bE0_z4UadYZ3Qe4tX8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "69742715451-9ns7bg38dghr7gm7678c5a6ttmft3qe5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
